@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Cursos y Talleres" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Cursos y Talleres" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100550e43d83eb648c2b3581bf885f38f43" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{9633ed3f-5d07-4da2-8dea-caa15ccdc275}" Name="FechaInicio" /><FieldRef ID="{cff6793b-c2b3-4616-accd-a5d5c725b1c8}" Name="FechaFin" /><FieldRef ID="{cf0eb939-08c7-446e-8aa3-29b0ae5069a2}" Name="Horario" /><FieldRef ID="{346762fa-c2be-492f-894d-9d61f6a0dbcd}" Name="Descripcion" /><FieldRef ID="{3a8ee0af-d75e-4f53-aea9-f7954bfb206d}" Name="Objetivo" /><FieldRef ID="{a624ca85-8559-4f25-bb17-b629406cf18c}" Name="Beneficios" /><FieldRef ID="{bc5a334f-7c2b-4555-b7ef-7c615711296a}" Name="Temario" /><FieldRef ID="{1d6c6490-6d29-4b59-b257-c593d01eaf53}" Name="Requisitos" /><FieldRef ID="{f9fb66ea-47f9-44ec-9507-32e182339a79}" Name="Expositor" /><FieldRef ID="{966d0a10-1a95-4f20-8d0d-c23071fdf808}" Name="Locacion" /><FieldRef ID="{437a717b-d50e-452e-85f7-6a3481579655}" Name="Departamento" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="FechaInicio" ID="{9633ed3f-5d07-4da2-8dea-caa15ccdc275}" DisplayName="Fecha Inicio" Type="DateTime" /><Field Name="FechaFin" ID="{cff6793b-c2b3-4616-accd-a5d5c725b1c8}" DisplayName="Fecha Fin" Type="DateTime" /><Field Name="Horario" ID="{cf0eb939-08c7-446e-8aa3-29b0ae5069a2}" DisplayName="Horario" Type="Text" /><Field Name="Descripcion" ID="{346762fa-c2be-492f-894d-9d61f6a0dbcd}" DisplayName="Descripcion" Type="Note" /><Field Name="Objetivo" ID="{3a8ee0af-d75e-4f53-aea9-f7954bfb206d}" DisplayName="Objetivo" Type="Note" /><Field Name="Beneficios" ID="{a624ca85-8559-4f25-bb17-b629406cf18c}" DisplayName="Beneficios" Type="Note" /><Field Name="Temario" ID="{bc5a334f-7c2b-4555-b7ef-7c615711296a}" DisplayName="Temario" Type="Note" /><Field Name="Requisitos" ID="{1d6c6490-6d29-4b59-b257-c593d01eaf53}" DisplayName="Requisitos" Type="Note" /><Field Name="Expositor" ID="{f9fb66ea-47f9-44ec-9507-32e182339a79}" DisplayName="Expositor" Type="Text" /><Field Name="Locacion" ID="{966d0a10-1a95-4f20-8d0d-c23071fdf808}" DisplayName="Locacion" Type="Text" /><Field Name="Departamento" ID="{437a717b-d50e-452e-85f7-6a3481579655}" DisplayName="Departamento" Type="Choice" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="FechaInicio" /><FieldRef Name="FechaFin" /><FieldRef Name="Horario" /><FieldRef Name="Descripcion" /><FieldRef Name="Objetivo" /><FieldRef Name="Beneficios" /><FieldRef Name="Temario" /><FieldRef Name="Requisitos" /><FieldRef Name="Expositor" /><FieldRef Name="Locacion" /><FieldRef Name="Departamento" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

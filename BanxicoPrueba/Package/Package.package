@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="20412164-9447-41b9-af85-e82201f55e62" 
+        solutionId="20412164-9447-41b9-af85-e82201f55e62" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BanxicoPrueba"
+        sharePointProductVersion="15.0">
+</package>

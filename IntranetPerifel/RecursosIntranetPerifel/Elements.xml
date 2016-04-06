@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RecursosIntranetPerifel" Url="Style Library">
+    <File Path="RecursosIntranetPerifel\Sample.txt" Url="RecursosIntranetPerifel/Sample.txt" />
+    <File Path="RecursosIntranetPerifel\JS\test.js" Url="RecursosIntranetPerifel/JS/test.js" />
+  </Module>
+</Elements>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="BirthdaysPFL" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BirthdaysPFL" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010089fcfff764374771b6bbe6c49a594c0e" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{8d6848e8-f980-44a1-ab2f-f9100e0e5c67}" Name="StartDate1" /><FieldRef ID="{1361e67b-f531-4287-bdcc-7bbf6a271fa1}" Name="BirthdayDate" /><FieldRef ID="{9a308229-04d3-4796-9c26-5cdfbe9ee9a2}" Name="Picture1" /><FieldRef ID="{bc529f8e-22e7-4f1a-85ce-6e9cedf4319d}" Name="Person" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="StartDate1" ID="{8d6848e8-f980-44a1-ab2f-f9100e0e5c67}" DisplayName="RookieDate" Type="DateTime" Required="TRUE" /><Field Name="BirthdayDate" ID="{1361e67b-f531-4287-bdcc-7bbf6a271fa1}" DisplayName="BirthdayDate" Type="DateTime" Required="TRUE" /><Field Name="Picture1" ID="{9a308229-04d3-4796-9c26-5cdfbe9ee9a2}" DisplayName="Picture" Type="URL" Required="TRUE" /><Field Name="Person" ID="{bc529f8e-22e7-4f1a-85ce-6e9cedf4319d}" DisplayName="Employee" Type="User" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="StartDate1" /><FieldRef Name="BirthdayDate" /><FieldRef Name="Picture1" /><FieldRef Name="Person" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

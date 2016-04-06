@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61FBBC3E-5680-4FEB-B114-5B8FEC7B0744}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PenaColorada</RootNamespace>
+    <AssemblyName>PenaColorada</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\CursosyTalleres\CursosyTalleres.ascx.cs">
+      <DependentUpon>CursosyTalleres.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CursosyTalleres\CursosyTalleres.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CursosyTalleres.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\NewsPC\NewsPC.ascx.cs">
+      <DependentUpon>NewsPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\NewsPC\NewsPC.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\QuickAccessPC\QuickAccessPC.ascx.cs">
+      <DependentUpon>QuickAccessPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\QuickAccessPC\QuickAccessPC.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickAccessPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\VacantesPC\VacantesPC.ascx.cs">
+      <DependentUpon>VacantesPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\VacantesPC\VacantesPC.ascx.g.cs">
+      <DependentUpon>VacantesPC.ascx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{44ed9e72-5dc7-4649-b190-bf9730e34749}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{5f264aa2-af76-429c-ad65-74bc9f8b1bd0}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Listas\Cursos y Talleres\Cursos y Talleres Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{047b49fb-905d-4436-9d29-ea9da569575c}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Cursos y Talleres\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{03389293-6822-4ffd-b88c-0116db0a3242}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\IconosQuickAccessPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca395b4b-6a79-4a38-9e0f-6ea0705fe7f7}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\NewsPC\NewsPCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35cfc48f-ad7f-44fb-937b-a778063bf703}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\NewsPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27bbfcad-92cb-417d-8e0b-b642faae2213}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\QuickAccessPC\QuickAccessPCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06ca4508-4f9b-44dd-8021-bd6c16901c02}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\QuickAccessPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c6abb5ab-81c1-4ea8-97d9-a8674c1b4cba}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\VacantesPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c8a99fb-1a2a-484c-90a6-484a9ac6e4df}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\VacantesPC\VacantesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c53fa53-c6fc-4e82-a572-73cebb00b4a8}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{99261bb5-4113-4424-93d5-8ccb1385c67b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="RecusosPColorada\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad3b7b22-1474-4f38-9332-09f187507c2f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CursosyTalleres\CursosyTalleres.webpart" />
+    <None Include="WebParts\CursosyTalleres\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c6383a1-6b64-409e-b714-4dcb6555bae5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\NewsPC\NewsPC.webpart" />
+    <None Include="WebParts\NewsPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca7e2861-fcfd-4b02-b9a9-49f5a55563f7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\QuickAccessPC\QuickAccessPC.webpart" />
+    <None Include="WebParts\QuickAccessPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad9a693a-067e-4958-9811-049ce4c3fb16}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\VacantesPC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{857fa9db-f518-41ce-8ed5-16fe1c589b7d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\VacantesPC\VacantesPC.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Listas\IconosQuickAccessPC\Elements.xml" />
+    <Content Include="Listas\NewsPC\Elements.xml" />
+    <Content Include="Listas\NewsPC\NewsPCInstance\Elements.xml" />
+    <Content Include="Listas\NewsPC\Schema.xml" />
+    <Content Include="Listas\QuickAccessPC\Elements.xml" />
+    <Content Include="Listas\QuickAccessPC\QuickAccessPCInstance\Elements.xml" />
+    <Content Include="Listas\QuickAccessPC\Schema.xml" />
+    <Content Include="RecusosPColorada\CSS\bootstrap.css" />
+    <Content Include="RecusosPColorada\CSS\cursosytalleresPC.css" />
+    <Content Include="RecusosPColorada\CSS\lightboxPC.css" />
+    <Content Include="RecusosPColorada\CSS\quickaccessPC.css" />
+    <Content Include="RecusosPColorada\CSS\vacantesPC.css" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="RecusosPColorada\Img\hora.png" />
+    <Content Include="RecusosPColorada\Img\lugar.png" />
+    <Content Include="RecusosPColorada\Img\talleres.png" />
+    <Content Include="RecusosPColorada\JS\angular.min.js" />
+    <Content Include="RecusosPColorada\JS\cursosytalleresPC.js" />
+    <Content Include="RecusosPColorada\JS\jquery-1.12.1.js" />
+    <Content Include="RecusosPColorada\JS\newsPC.js" />
+    <Content Include="RecusosPColorada\JS\quickAccessPC.js" />
+    <Content Include="RecusosPColorada\JS\vacantesPC.js" />
+    <Content Include="Listas\Cursos y Talleres\Cursos y Talleres Instance\Elements.xml" />
+    <Content Include="Listas\Cursos y Talleres\Elements.xml" />
+    <Content Include="Listas\Cursos y Talleres\Schema.xml" />
+    <Content Include="Listas\VacantesPC\Elements.xml" />
+    <Content Include="Listas\VacantesPC\Schema.xml" />
+    <Content Include="Listas\VacantesPC\VacantesInstance\Elements.xml" />
+    <Content Include="RecusosPColorada\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RecusosPColorada\Img\people.png" />
+    <Content Include="RecusosPColorada\Img\vacantes.png" />
+    <Content Include="RecusosPColorada\Sample.txt" />
+    <Content Include="WebParts\CursosyTalleres\CursosyTalleres.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>CursosyTalleres.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\CursosyTalleres\Elements.xml" />
+    <Content Include="WebParts\NewsPC\Elements.xml" />
+    <Content Include="WebParts\NewsPC\NewsPC.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>NewsPC.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\QuickAccessPC\Elements.xml" />
+    <Content Include="WebParts\QuickAccessPC\QuickAccessPC.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>QuickAccessPC.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\VacantesPC\Elements.xml" />
+    <Content Include="WebParts\VacantesPC\VacantesPC.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>VacantesPC.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

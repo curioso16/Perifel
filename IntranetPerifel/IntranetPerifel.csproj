@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9E1994B-CF42-452D-A3A7-6214A0FF824A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntranetPerifel</RootNamespace>
+    <AssemblyName>IntranetPerifel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ReferenciaWebDolar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\BirthdaysPFL\BirthdaysPFL.ascx.cs">
+      <DependentUpon>BirthdaysPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\BirthdaysPFL\BirthdaysPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BirthdaysPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CurrencyPFL\CurrencyPFL.ascx.cs">
+      <DependentUpon>CurrencyPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CurrencyPFL\CurrencyPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrencyPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\NewsPFL\NewsPFL.ascx.cs">
+      <DependentUpon>NewsPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\NewsPFL\NewsPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\QuickAccessPFL\QuickAccessPFL.ascx.cs">
+      <DependentUpon>QuickAccessPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\QuickAccessPFL\QuickAccessPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickAccessPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Slider\Slider.ascx.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Slider\Slider.ascx.g.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WebParts\VacantesPFL\VacantesPFL.ascx.cs">
+      <DependentUpon>VacantesPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\VacantesPFL\VacantesPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacantesPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WeatherPFL\WeatherPFL.ascx.cs">
+      <DependentUpon>WeatherPFL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WeatherPFL\WeatherPFL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeatherPFL.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{e683ec9b-660a-43a7-81dc-058afacab88f}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{0d49c7ee-2aba-4af0-891c-a9587fc63f26}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Listas\BirthdaysPFL\BirthdaysPFLInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f4a9fef-5995-4b0e-9963-e00fd62a7464}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\BirthdaysPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f9128297-09bb-478e-b29b-184d0247a467}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Cursos y Talleres\Cursos y Talleres Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce06bc51-808a-4fd3-a8fe-bb79aee03aa2}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Cursos y Talleres\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11df19d8-611a-47ff-96f2-8bdc8aa25d65}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\NewsPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dec9a5bc-edce-434a-9ce3-ed6448eab20d}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\QuickAccessPFL\QuickAccessPFLInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7a7d313-f1d8-4180-aac9-a4337894149c}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\QuickAccessPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32afcd6f-0a16-47f8-bb2a-5bd9c41065b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\SliderPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c97bc54-b287-4e90-8a3f-ab8268ac2c63}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\VacantesPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5aebc633-a49c-475f-8f35-f2fd8b6c856e}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\VacantesPFL\VacantesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd57604f-8759-455e-9141-d196c238a023}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{dcdf5ee2-bc55-4b70-b11c-ed319ee46d11}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="RecursosIntranetPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad00f465-0b7c-4dc2-8a91-103398782037}</SharePointProjectItemId>
+    </None>
+    <None Include="Service References\ReferenciaWebDolar\DgieWS.wsdl" />
+    <None Include="WebParts\BirthdaysPFL\BirthdaysPFL.webpart" />
+    <None Include="WebParts\BirthdaysPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41cfcbe2-1cdf-4693-882f-b8780de1133a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CurrencyPFL\CurrencyPFL.webpart" />
+    <None Include="WebParts\CurrencyPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{570ab121-0d1b-45b8-b1c0-6bec5b451bd9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\NewsPFL\NewsPFL.webpart" />
+    <None Include="WebParts\NewsPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29e925f3-35e5-4aa2-9091-1b517f859d35}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\QuickAccessPFL\QuickAccessPFL.webpart" />
+    <None Include="WebParts\QuickAccessPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fcd2a449-de0e-4506-8616-299013295747}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Slider\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66e43c1f-06af-43a0-b536-170a91f55b7b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Slider\Slider.webpart" />
+    <None Include="WebParts\VacantesPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f910a1b1-3f40-4191-8d73-3d3c085e54be}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\VacantesPFL\VacantesPFL.webpart" />
+    <None Include="WebParts\WeatherPFL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1756be6d-3719-4e8e-8711-4078334a88b5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\WeatherPFL\WeatherPFL.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Listas\BirthdaysPFL\BirthdaysPFLInstance\Elements.xml" />
+    <Content Include="Listas\BirthdaysPFL\Elements.xml" />
+    <Content Include="Listas\BirthdaysPFL\Schema.xml" />
+    <Content Include="Listas\Cursos y Talleres\Cursos y Talleres Instance\Elements.xml" />
+    <Content Include="Listas\Cursos y Talleres\Elements.xml" />
+    <Content Include="Listas\Cursos y Talleres\Schema.xml" />
+    <Content Include="Listas\NewsPFL\Elements.xml" />
+    <Content Include="Listas\QuickAccessPFL\Elements.xml" />
+    <Content Include="Listas\QuickAccessPFL\QuickAccessPFLInstance\Elements.xml" />
+    <Content Include="Listas\QuickAccessPFL\Schema.xml" />
+    <Content Include="Listas\SliderPFL\Elements.xml" />
+    <Content Include="Listas\VacantesPFL\Elements.xml" />
+    <Content Include="Listas\VacantesPFL\Schema.xml" />
+    <Content Include="Listas\VacantesPFL\VacantesInstance\Elements.xml" />
+    <Content Include="RecursosIntranetPFL\CSS\birthdaysPFL.css" />
+    <Content Include="RecursosIntranetPFL\CSS\bootstrap.css" />
+    <Content Include="RecursosIntranetPFL\CSS\cursosytalleres.css" />
+    <Content Include="RecursosIntranetPFL\CSS\lightboxPFL.css" />
+    <Content Include="RecursosIntranetPFL\CSS\quickaccessPFL.css" />
+    <Content Include="RecursosIntranetPFL\CSS\swiper.css" />
+    <Content Include="RecursosIntranetPFL\CSS\vacantesPFL.css" />
+    <Content Include="RecursosIntranetPFL\CSS\weatherPFL.css" />
+    <Content Include="RecursosIntranetPFL\Elements.xml" />
+    <Content Include="RecursosIntranetPFL\Img\people.png" />
+    <Content Include="RecursosIntranetPFL\Img\vacantes.png" />
+    <Content Include="RecursosIntranetPFL\JS\angular.min.js" />
+    <Content Include="RecursosIntranetPFL\JS\BirthdaysPFL.js" />
+    <Content Include="RecursosIntranetPFL\JS\currencyPFL.js" />
+    <Content Include="RecursosIntranetPFL\JS\cursosytalleres.js" />
+    <Content Include="RecursosIntranetPFL\JS\jquery-1.12.1.js" />
+    <Content Include="RecursosIntranetPFL\JS\jquery.simpleWeather.min.js" />
+    <Content Include="RecursosIntranetPFL\JS\newsPFL.js" />
+    <Content Include="RecursosIntranetPFL\JS\quickAccessPFL.js" />
+    <Content Include="RecursosIntranetPFL\JS\swiper.min.js" />
+    <Content Include="RecursosIntranetPFL\JS\vacantesPFL.js" />
+    <Content Include="RecursosIntranetPFL\JS\weatherPFL.js" />
+    <Content Include="RecursosIntranetPFL\Sample.txt" />
+    <Content Include="RecursosIntranetPFL\Slider\js\slider.js" />
+    <Content Include="WebParts\Slider\Elements.xml" />
+    <Content Include="WebParts\Slider\Slider.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Slider.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\VacantesPFL\Elements.xml" />
+    <Content Include="WebParts\VacantesPFL\VacantesPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>VacantesPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\WeatherPFL\Elements.xml" />
+    <Content Include="WebParts\WeatherPFL\WeatherPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WeatherPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\ReferenciaWebDolar\configuration91.svcinfo" />
+    <None Include="Service References\ReferenciaWebDolar\configuration.svcinfo" />
+    <None Include="Service References\ReferenciaWebDolar\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WebParts\BirthdaysPFL\BirthdaysPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>BirthdaysPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\BirthdaysPFL\Elements.xml" />
+    <Content Include="WebParts\CurrencyPFL\CurrencyPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>CurrencyPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\CurrencyPFL\Elements.xml" />
+    <Content Include="WebParts\NewsPFL\Elements.xml" />
+    <Content Include="WebParts\NewsPFL\NewsPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>NewsPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\QuickAccessPFL\Elements.xml" />
+    <Content Include="WebParts\QuickAccessPFL\QuickAccessPFL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>QuickAccessPFL.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ReferenciaWebDolar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

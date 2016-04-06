@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="RecusosPColorada\" Type="ElementManifest" />
+    <ProjectItemFile Source="Sample.txt" Target="RecusosPColorada\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\people.png" Target="RecusosPColorada\Img\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\vacantes.png" Target="RecusosPColorada\Img\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\bootstrap.css" Target="RecusosPColorada\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\cursosytalleresPC.css" Target="RecusosPColorada\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\quickaccessPC.css" Target="RecusosPColorada\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\vacantesPC.css" Target="RecusosPColorada\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\angular.min.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\jquery-1.12.1.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\quickAccessPC.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\vacantesPC.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\cursosytalleresPC.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\newsPC.js" Target="RecusosPColorada\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\lightboxPC.css" Target="RecusosPColorada\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\hora.png" Target="RecusosPColorada\Img\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\lugar.png" Target="RecusosPColorada\Img\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\talleres.png" Target="RecusosPColorada\Img\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="NewsPFL" List="113" Url="_catalogs/wp">
+    <File Path="NewsPFL\NewsPFL.webpart" Url="IntranetPerifel_NewsPFL.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

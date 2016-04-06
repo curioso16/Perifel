@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="RecursosIntranetPFL\" Type="ElementManifest" />
+    <ProjectItemFile Source="Sample.txt" Target="RecursosIntranetPFL\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\angular.min.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\newsPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\quickAccessPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\lightboxPFL.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\quickaccessPFL.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\swiper.min.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\BirthdaysPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\swiper.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Slider\js\slider.js" Target="RecursosIntranetPFL\Slider\js\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\birthdaysPFL.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\currencyPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\weatherPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\weatherPFL.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\jquery.simpleWeather.min.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\jquery-1.12.1.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\cursosytalleres.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="JS\vacantesPFL.js" Target="RecursosIntranetPFL\JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\cursosytalleres.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\vacantesPFL.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="CSS\bootstrap.css" Target="RecursosIntranetPFL\CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\people.png" Target="RecursosIntranetPFL\Img\" Type="ElementFile" />
+    <ProjectItemFile Source="Img\vacantes.png" Target="RecursosIntranetPFL\Img\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

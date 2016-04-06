@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RecusosPColorada" Url="Style Library">
+    <File Path="RecusosPColorada\Sample.txt" Url="RecusosPColorada/Sample.txt" />
+    <File Path="RecusosPColorada\Img\people.png" Url="RecusosPColorada/Img/people.png" ReplaceContent="True"/>
+    <File Path="RecusosPColorada\Img\vacantes.png" Url="RecusosPColorada/Img/vacantes.png" ReplaceContent="True"/>
+    <File Path="RecusosPColorada\CSS\bootstrap.css" Url="RecusosPColorada/CSS/bootstrap.css" />
+    <File Path="RecusosPColorada\CSS\cursosytalleresPC.css" Url="RecusosPColorada/CSS/cursosytalleresPC.css" ReplaceContent="True" />
+    <File Path="RecusosPColorada\CSS\quickaccessPC.css" Url="RecusosPColorada/CSS/quickaccessPC.css" ReplaceContent="True" />
+    <File Path="RecusosPColorada\CSS\vacantesPC.css" Url="RecusosPColorada/CSS/vacantesPC.css"  ReplaceContent="True"/>
+    <File Path="RecusosPColorada\JS\angular.min.js" Url="RecusosPColorada/JS/angular.min.js" />
+    <File Path="RecusosPColorada\JS\jquery-1.12.1.js" Url="RecusosPColorada/JS/jquery-1.12.1.js" />
+    <File Path="RecusosPColorada\JS\quickAccessPC.js" Url="RecusosPColorada/JS/quickAccessPC.js" ReplaceContent="True" />
+    <File Path="RecusosPColorada\JS\vacantesPC.js" Url="RecusosPColorada/JS/vacantesPC.js" ReplaceContent="True" />
+    <File Path="RecusosPColorada\JS\cursosytalleresPC.js" Url="RecusosPColorada/JS/cursosytalleresPC.js" ReplaceContent="True" />
+    <File Path="RecusosPColorada\JS\newsPC.js" Url="RecusosPColorada/JS/newsPC.js" ReplaceContent="True" />
+    <File Path="RecusosPColorada\CSS\lightboxPC.css" Url="RecusosPColorada/CSS/lightboxPC.css" ReplaceContent="True" />
+    <File Path="RecusosPColorada\Img\hora.png" Url="RecusosPColorada/Img/hora.png" ReplaceContent="True" />
+    <File Path="RecusosPColorada\Img\lugar.png" Url="RecusosPColorada/Img/lugar.png" ReplaceContent="True" />
+    <File Path="RecusosPColorada\Img\talleres.png" Url="RecusosPColorada/Img/talleres.png"  ReplaceContent="True"/>
+  </Module>
+</Elements>

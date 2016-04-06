@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RecursosIntranetPFL" Url="Style Library">
+    <File Path="RecursosIntranetPFL\Sample.txt" Url="RecursosIntranetPFL/Sample.txt" />
+    <File Path="RecursosIntranetPFL\JS\angular.min.js" Url="RecursosIntranetPFL/JS/angular.min.js" />
+    <File Path="RecursosIntranetPFL\JS\newsPFL.js" Url="RecursosIntranetPFL/JS/newsPFL.js" ReplaceContent="True" />
+    <File Path="RecursosIntranetPFL\JS\quickAccessPFL.js" Url="RecursosIntranetPFL/JS/quickAccessPFL.js" ReplaceContent="True" />
+    <File Path="RecursosIntranetPFL\CSS\lightboxPFL.css" Url="RecursosIntranetPFL/CSS/lightboxPFL.css" ReplaceContent="True" />
+    <File Path="RecursosIntranetPFL\CSS\QuickAccessPFL.css" Url="RecursosIntranetPFL/CSS/QuickAccessPFL.css" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\JS\swiper.min.js" Url="RecursosIntranetPFL/JS/swiper.min.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\JS\BirthdaysPFL.js" Url="RecursosIntranetPFL/JS/BirthdaysPFL.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\CSS\swiper.css" Url="RecursosIntranetPFL/CSS/swiper.css" />
+    <File Path="RecursosIntranetPFL\Slider\js\slider.js" Url="RecursosIntranetPFL/Slider/js/slider.js" />
+    <File Path="RecursosIntranetPFL\CSS\birthdaysPFL.css" Url="RecursosIntranetPFL/CSS/birthdaysPFL.css" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\JS\currencyPFL.js" Url="RecursosIntranetPFL/JS/currencyPFL.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\JS\weatherPFL.js" Url="RecursosIntranetPFL/JS/weatherPFL.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\CSS\weatherPFL.css" Url="RecursosIntranetPFL/CSS/weatherPFL.css" />
+    <File Path="RecursosIntranetPFL\JS\jquery.simpleWeather.min.js" Url="RecursosIntranetPFL/JS/jquery.simpleWeather.min.js" />
+    <File Path="RecursosIntranetPFL\JS\jquery-1.12.1.js" Url="RecursosIntranetPFL/JS/jquery-1.12.1.js" />
+    <File Path="RecursosIntranetPFL\JS\cursosytalleres.js" Url="RecursosIntranetPFL/JS/cursosytalleres.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\JS\vacantesPFL.js" Url="RecursosIntranetPFL/JS/vacantesPFL.js" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\CSS\cursosytalleres.css" Url="RecursosIntranetPFL/CSS/cursosytalleres.css" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\CSS\vacantesPFL.css" Url="RecursosIntranetPFL/CSS/vacantesPFL.css" ReplaceContent="True"/>
+    <File Path="RecursosIntranetPFL\CSS\bootstrap.css" Url="RecursosIntranetPFL/CSS/bootstrap.css" />
+    <File Path="RecursosIntranetPFL\Img\people.png" Url="RecursosIntranetPFL/Img/people.png" />
+    <File Path="RecursosIntranetPFL\Img\vacantes.png" Url="RecursosIntranetPFL/Img/vacantes.png" />
+  </Module>
+</Elements>

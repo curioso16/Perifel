@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="VacantesPC" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/VacantesPC" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100cf9be9a49ddc4db7a8a75439fca2fb34" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{a5535e92-e780-4018-81a2-b3deab9c6f07}" Name="Locacion" /><FieldRef ID="{357c9db3-a212-4cb7-9e0c-f09c9ce34c05}" Name="Educacion" /><FieldRef ID="{072df63e-99cc-4dd1-81d4-677ed9d41deb}" Name="Habilidades" /><FieldRef ID="{347138bc-072b-4dc7-adc6-a96dcba1a6b1}" Name="Departamento" /><FieldRef ID="{281d4134-94f6-4fcd-a04f-fc80cc24bb72}" Name="Descripcion" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Locacion" ID="{a5535e92-e780-4018-81a2-b3deab9c6f07}" DisplayName="Locacion" Type="Text" /><Field Name="Educacion" ID="{357c9db3-a212-4cb7-9e0c-f09c9ce34c05}" DisplayName="Educacion" Type="Note" /><Field Name="Habilidades" ID="{072df63e-99cc-4dd1-81d4-677ed9d41deb}" DisplayName="Habilidades" Type="Note" /><Field Name="Departamento" ID="{347138bc-072b-4dc7-adc6-a96dcba1a6b1}" DisplayName="Departamento" Type="Choice" /><Field Name="Descripcion" ID="{281d4134-94f6-4fcd-a04f-fc80cc24bb72}" DisplayName="Descripcion" Type="Note" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Descripcion" /><FieldRef Name="Locacion" /><FieldRef Name="Educacion" /><FieldRef Name="Habilidades" /><FieldRef Name="Departamento" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

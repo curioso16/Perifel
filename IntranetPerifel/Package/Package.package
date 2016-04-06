@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dcdf5ee2-bc55-4b70-b11c-ed319ee46d11" solutionId="dcdf5ee2-bc55-4b70-b11c-ed319ee46d11" resetWebServer="false" sharePointProductVersion="15.0" name="IntranetPerifel" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e683ec9b-660a-43a7-81dc-058afacab88f" />
+    <featureReference itemId="0d49c7ee-2aba-4af0-891c-a9587fc63f26" />
+  </features>
+</package>

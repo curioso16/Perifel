@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4a5cd326-bf2d-494e-8338-1401887f029c" solutionId="4a5cd326-bf2d-494e-8338-1401887f029c" resetWebServer="false" sharePointProductVersion="15.0" name="BanxicoTest" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="16f90081-f74a-4458-bf77-94a78a8fdc43" />
+  </features>
+</package>
